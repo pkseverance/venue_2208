@@ -16,4 +16,8 @@ class Venue
   def patrons()
     @patrons
   end
+
+  def add_patron(patron)
+    @patrons << patron
+  end
 end
