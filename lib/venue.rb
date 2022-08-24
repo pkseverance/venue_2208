@@ -25,4 +25,13 @@ class Venue
     @patrons.each do |patron|
       patron.upcase!
     end
+  end
+
+  def over_capacity()
+    if patrons > 4
+      return true
+    else
+      return false
+    end
+  end
 end
